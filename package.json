@@ -29,6 +29,7 @@
   "scripts": {
     "test": "istanbul test _mocha --report html -- test/*.js --reporter spec",
     "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+
   },
   "dependencies": {
     "through2": "^1.0.0",
@@ -36,7 +37,7 @@
     "chalk": "~0.4.0",
     "text-table": "~0.2.0",
     "vinyl-fs": "~0.3.0",
-    "jsdoc": "3.3.0-alpha5",
+    "jsdoc": "git+https://github.com/grokworks/jsdoc.git",
     "taffydb": "~2.7.2",
     "ink-docstrap": "~0.4.5",
     "wrench": "~1.5.6",
